@@ -6,15 +6,17 @@ const basis = {
     xl: 1200,
   },
   borderRadius: 4,
-  main: '#00a07f',
+  main: '#ffffff',
 }
 export const lightTheme = {
   ...basis,
   text: '#0a192f',
   background: '#fff',
-  primary: '#80DFB8',
-  secondary: '#00a07f',
-  neutral: '#80DFB8',
+  white: '#ffffff',
+  primary: '#000D3F',
+  secondary: '#4BE4F0',
+  neutral: '#CCCCFE',
+  ternary : '#4B4EF0',
   shadow: 'rgba(2,12,27,0.7)',
 }
 export const darkTheme = {
