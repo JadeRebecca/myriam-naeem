@@ -1,11 +1,13 @@
 import React from 'react'
-import { SubTitle } from '../SectionElements'
-import { SkillCol, SkillsDescription, Skill } from './SkillsElements'
+import { SkillCol, SkillsDescription, SkillTitle } from './SkillsElements'
+import img from '../../../images/icons/react.png'
+import { Img } from '../SectionElements'
 
 const SkillItem = ({ item }) => {
   return (
     <SkillCol>
-      <SubTitle className="underline">{item.category}</SubTitle>
+      <Img src={img} alt="projet" />
+      <SkillTitle>{item.category}</SkillTitle>
       <SkillsDescription>
         {item.description}
       </SkillsDescription>

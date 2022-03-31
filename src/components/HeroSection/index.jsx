@@ -1,15 +1,11 @@
 import React from 'react'
-
-import {
-  HeroContainer,
-  HeroContent,
-  BtnContainer,
-  HeroS1,
-  HeroS2,
-  HeroS3,
-  HeroS4,
-} from './HeroElements'
 import Btn from '../Button'
+import {
+  BtnContainer, HeroContainer,
+  HeroContent, HeroS1,
+  HeroS2
+} from './HeroElements'
+
 
 const HeroSection = () => {
   return (

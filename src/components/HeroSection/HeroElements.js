@@ -11,7 +11,7 @@ const pFadeIn = keyframes`
 `
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.primary};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,8 @@ export const HeroContent = styled.h1`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  //text-align : center;
 
   > p {
     overflow: hidden;
@@ -74,7 +75,7 @@ export const HeroS1 = styled.span`
 
 export const HeroS2 = styled.span`
   display: block;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.secondary};
   font-size: 48px;
   text-align: left;
 
@@ -86,25 +87,8 @@ export const HeroS2 = styled.span`
     font-size: 32px;
   }
 `
-export const HeroS3 = styled.span`
-  display: block;
-  color: ${({ theme }) => theme.text};
-  margin-top: 24px;
-  font-size: 24px;
-  text-align: left;
-  // max-width: 600px;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    font-size: 24px;
-  }
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 18px;
-  }
-`
-export const HeroS4 = styled.span`
-  color: ${({ theme }) => theme.main};
-`
 
 
 export const BtnContainer = styled.div`
@@ -112,4 +96,5 @@ export const BtnContainer = styled.div`
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  gap : 5px;
 `

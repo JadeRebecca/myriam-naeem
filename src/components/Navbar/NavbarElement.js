@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogoLink = styled(LinkS)`
-  color: ${({ theme }) => theme.main};
+  color: ${({ theme }) => theme.white};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -48,7 +48,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    color: ${({ theme }) => theme.main};
+    color: ${({ theme }) => theme.white};
     display: block;
     position: absolute;
     top: 0;
@@ -84,6 +84,36 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
   padding-bottom: 4px;
   font-weight: 500;
+  color: ${({ theme }) => theme.white};
+
+  &.active {
+    padding-bottom: 0px;
+    border-bottom: 4px solid ${({ theme }) => theme.secondary};
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.secondary};
+    transition: 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+`
+export const NavAnchor = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4px;
+  height: 100%;
+  cursor: pointer;
+  padding-bottom: 4px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.white};
 
   &.active {
     padding-bottom: 0px;

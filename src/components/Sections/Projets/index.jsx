@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useIntersection } from '../../../hooks/useIntersection'
 import { Title } from '../../SectionTitle/SectionTitleELements'
-import { InfoContainer, InfoWrapper } from '../SectionElements'
-import { skills } from './Data'
-import SkillItem from './SkillItem'
-import { SkillsContainer, SkillsWrapper } from './SkillsElements'
+import { InfoWrapper } from '../SectionElements'
+import { projets } from './Data'
+import { ProjetsWrapper, ProjetsContainer } from './ProjetsElements'
+import ProjetItem from './ProjetsItem'
 // import strategyIcon from '../../images/icons/strategy.png'
 
-const Skills = () => {
+const Projets = () => {
   const [animation, setAnimation] = useState(false)
   const ref = useRef()
   const inViewport = useIntersection(ref, '0px 0px -500px 0px')
@@ -19,17 +19,17 @@ const Skills = () => {
   }, [inViewport])
 
   return (
-    <SkillsContainer id="skills" ref={ref}>
+    <ProjetsContainer id="projets" ref={ref}>
       <InfoWrapper>
-        <Title>Compétences</Title>
-        <SkillsWrapper className={animation ? 'goAnimation' : 'hidden'}>
-          {skills.map((item, index) => (
-            <SkillItem key={index} item={item} />
+        <Title className="reverse">Mes projets</Title>
+        <ProjetsWrapper className={animation ? 'goAnimation' : 'hidden'}>
+          {projets.map((item, index) => (
+            <ProjetItem key={index} item={item} />
           ))}
-        </SkillsWrapper>
+        </ProjetsWrapper>
       </InfoWrapper>
-    </SkillsContainer>
+    </ProjetsContainer>
   )
 }
 
-export default Skills
+export default Projets

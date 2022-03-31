@@ -11,6 +11,7 @@ import {
   NavMenu,
   NavItem,
   NavLink,
+  NavAnchor,
   NavBtn,
 } from './NavbarElement'
 import Btn from '../Button'
@@ -45,7 +46,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="projet"
+                to="projets"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -55,15 +56,12 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                to="linkedIn"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
+              <NavAnchor
+                href="https://www.linkedin.com/in/myriam-naeem/"
+                target="_blank"
               >
                 Linkedin
-              </NavLink>
+              </NavAnchor>
             </NavItem>
             <NavItem>
               <NavLink

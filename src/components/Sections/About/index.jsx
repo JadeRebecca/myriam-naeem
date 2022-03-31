@@ -1,22 +1,13 @@
 import React from 'react'
+import { Title } from '../../SectionTitle/SectionTitleELements'
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  TextWrapper,
-  Title,
-  Description,
-  Forth,
-  Column2,
-  ImgWrap,
-  Img,
+  Description, InfoContainer,
+  InfoWrapper, TextWrapper
 } from '../SectionElements'
-import img from '../../../images/remote.svg'
 
 const About = () => {
   return (
-    <InfoContainer id="about">
+    <InfoContainer id="accueil">
       <InfoWrapper>
       
         

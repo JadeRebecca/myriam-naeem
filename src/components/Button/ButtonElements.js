@@ -4,9 +4,9 @@ import { Link as LinkR } from 'react-router-dom'
 export const BtnLink = styled.a.attrs((props) => ({
   className: props.className,
 }))`
-  background: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.main};
-  border: 1.4px solid ${({ theme }) => theme.main};
+
+  color: ${({ theme }) => theme.secondary};
+  border: 1.4px solid ${({ theme }) => theme.secondary};
   border-radius: ${({ theme }) => theme.borderRadius}px;
   white-space: nowrap;
   padding: 10px 22px;
@@ -33,9 +33,8 @@ export const BtnLink = styled.a.attrs((props) => ({
 export const Btn = styled.a.attrs((props) => ({
   className: props.className,
 }))`
-  background: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.main};
-  border: 1.4px solid ${({ theme }) => theme.main};
+  color: ${({ theme }) => theme.secondary};
+  border: 1.4px solid ${({ theme }) => theme.secondary};
   border-radius: ${({ theme }) => theme.borderRadius}px;
   white-space: nowrap;
   padding: 10px 22px;

@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import HeroSection from '../components/HeroSection'
 import Footer from '../components/Footer'
 import About from '../components/Sections/About'
-import Work from '../components/Sections/Work'
+import Projets from '../components/Sections/Projets'
 import Skills from '../components/Sections/Skills'
 import Contact from '../components/Sections/Contact'
 
@@ -23,7 +23,7 @@ const Home = ({ theme, themeToggler }) => {
         <HeroSection />
         <About />
         <Skills />
-        <Work />
+        <Projets />
         <Contact />
       </Layout>
       <Footer />
