@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: ${({ theme }) => theme.main};
+  color: ${({ theme }) => theme.white};
 `
 export const Link = styled.div`
   cursor: pointer;

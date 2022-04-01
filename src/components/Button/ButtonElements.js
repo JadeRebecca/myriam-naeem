@@ -24,9 +24,8 @@ export const BtnLink = styled.a.attrs((props) => ({
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({ theme }) => theme.secondary};
-    border-color: ${({ theme }) => theme.background};
-    // color: ${({ theme }) => theme.text};
-    color: ${({ theme }) => theme.background};
+    border-color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.primary};
   }
 `
 
@@ -51,9 +50,7 @@ export const Btn = styled.a.attrs((props) => ({
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ theme }) => theme.secondary};
-    border-color: ${({ theme }) => theme.background};
-    // color: ${({ theme }) => theme.text};
-    color: ${({ theme }) => theme.background};
+    border-color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.white};
   }
 `

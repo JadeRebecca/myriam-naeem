@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.primary};
   display: grid;
   align-items: center;
   top: 0;
@@ -17,7 +17,7 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 export const CloseIcon = styled(FaTimes)`
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.white};
 `
 export const Icon = styled.div`
   position: absolute;
@@ -29,7 +29,7 @@ export const Icon = styled.div`
   outline: none;
 `
 export const SidebarWrapper = styled.div`
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.white};
 `
 
 export const SidebarLink = styled(LinkS)`
@@ -41,11 +41,11 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.white};
   cursor: pointer;
 
   &:hover {
-    color: ${({ theme }) => theme.main};
+    color: ${({ theme }) => theme.secondary};
     transition: 0.2s ease-in-out;
   }
 `

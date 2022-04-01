@@ -35,7 +35,6 @@ export const HeroContent = styled.h1`
   display: flex;
   flex-direction: column;
   align-items: center;
-  //text-align : center;
 
   > p {
     overflow: hidden;
@@ -59,9 +58,8 @@ export const HeroContent = styled.h1`
 export const HeroS1 = styled.span`
   display: block;
   margin-top: 24px;
-  color: ${({ theme }) => theme.main};
+  color: ${({ theme }) => theme.white};
   font-size: 24px;
-  text-align: left;
   max-width: 600px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
@@ -77,14 +75,13 @@ export const HeroS2 = styled.span`
   display: block;
   color: ${({ theme }) => theme.secondary};
   font-size: 48px;
-  text-align: left;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     font-size: 40px;
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 32px;
+    font-size: 22px;
   }
 `
 

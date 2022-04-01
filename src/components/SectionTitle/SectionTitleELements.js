@@ -11,7 +11,6 @@ export const Title = styled.h2.attrs((props) => ({
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 26px;
-    font-family: 'Anonymous Pro', monospace;
     position: relative;
 
     &.reverse {

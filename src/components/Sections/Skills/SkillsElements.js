@@ -18,7 +18,7 @@ export const SkillTitle = styled.h3.attrs((props) => ({
   className: props.className,
 }))`
   font-size: 18px;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.primary};
   text-align : center;
 
   &.longText {
@@ -60,16 +60,11 @@ export const SkillCol = styled.div`
   //   background: red;
   padding: 15px;
   width: 19%;
-  border: 1px solid ${({ theme }) => theme.main};
-  border-radius: ${({ theme }) => theme.borderRadius}px;
-
   transform: scale(1);
-
   transition-duration: 0.2s;
 
   &:hover {
     transform: scale(1.05);
-    border: 2px solid ${({ theme }) => theme.main};
     box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
   }
 

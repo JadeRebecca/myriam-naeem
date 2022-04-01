@@ -16,7 +16,6 @@ import {
 } from './NavbarElement'
 import Btn from '../Button'
 import Pdf from '../../docs/resume.pdf'
-import logo from '../../images/logo/logo-blanc.png'
 
 const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {
@@ -27,7 +26,7 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
       <Nav>
         <NavbarContainer>
           <NavLogoLink to="/" onClick={toggleHome}>
-            <NavLogo src={logo} alt="JD logo" />
+            MN
           </NavLogoLink>
           <MobileIcon onClick={toggle}>
             <FaBars />

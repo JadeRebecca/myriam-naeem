@@ -17,7 +17,6 @@ export const ProjetTitle = styled.h3.attrs((props) => ({
   className: props.className,
 }))`
   font-size: 18px;
-  //color: ${({ theme }) => theme.text};
   text-align : center;
  
 `
@@ -53,7 +52,6 @@ export const ProjetCol = styled.div`
   //   background: red;
   padding: 15px;
   width: 24%;
-  border: 1px solid ${({ theme }) => theme.main};
   border-radius: ${({ theme }) => theme.borderRadius}px;
   background-color: ${({ theme }) => theme.ternary};
   color: ${({ theme }) => theme.white};
@@ -63,7 +61,6 @@ export const ProjetCol = styled.div`
 
   &:hover {
     transform: scale(1.05);
-    border: 2px solid ${({ theme }) => theme.main};
     box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
   }
 

@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-  background: ${({ theme }) => theme.background};
-  // transition: all 0.8s ease-in-out;
+  background: ${({ theme }) => theme.white};
   min-height: 700px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
@@ -43,7 +42,7 @@ export const Description = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 26px;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.primary};
   text-align: justify;
 `
 
