@@ -34,7 +34,7 @@ export const NavLogoLink = styled(LinkS)`
   color: ${({ theme }) => theme.white};
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 18px;
   display: flex;
   align-items: center;
   margin-left: 24px;

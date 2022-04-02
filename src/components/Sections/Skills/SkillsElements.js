@@ -89,3 +89,6 @@ export const Skill = styled.div`
   background: ${({ theme }) => theme.neutral};
   border-radius: 20px;
 `
+export const ImgContainer = styled.div`
+  padding: 4vw;
+`

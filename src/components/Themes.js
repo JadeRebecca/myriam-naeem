@@ -12,8 +12,8 @@ export const lightTheme = {
   white: '#ffffff',
   primary: '#141526',
   secondary: '#1CBFFF',
-  neutral: '#CCCCFE',
-  ternary : '#4B4EF0',
+  neutral: '#E5E5E5',
+  ternary : '#232443',
   shadow: 'rgba(2,12,27,0.7)',
 }
 export const darkTheme = {

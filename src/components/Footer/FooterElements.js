@@ -8,14 +8,25 @@ export const FooterContainer = styled.div`
   padding-bottom: 20px;
   color: ${({ theme }) => theme.white};
 `
-export const Link = styled.div`
+export const FooterLogo = styled.span`
+  position : absolute;
+  left : 24px;
+  margin-top : 20px;
+  font-size : 18px;
+  font-weight : bold;
+`
+export const FooterLink = styled.div`
+  font-size : 14px;
+  font-weight : 300;
+  line-height : 24px;
   cursor: pointer;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.secondary};
   }
 `
-export const LinkEl = styled.div``
-
-export const IconWrapper = styled.span`
-  padding: 5px;
+export const FooterText = styled.div`
+  font-size : 14px;
+  font-weight : 300;
+  line-height : 24px;
 `
+

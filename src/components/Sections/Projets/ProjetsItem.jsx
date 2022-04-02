@@ -1,12 +1,9 @@
 import React from 'react'
 import {ProjetCol, ProjetDescription, Projet, ProjetTitle, ProjetCompetences, ProjetBtnContainer, ProjetCompetencesTitle} from './ProjetsElements'
 import Btn from '../../Button'
-import img from '../../../images/remote.svg'
 import { Img } from '../SectionElements'
 
-
-
-const ProjetItem = ({ item }) => {
+const ProjetItem = ({ item, img }) => {
   return (
     <ProjetCol>
       <ProjetTitle>{item.titre}</ProjetTitle>

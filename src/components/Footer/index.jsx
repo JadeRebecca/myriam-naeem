@@ -1,7 +1,5 @@
 import React from 'react'
-import { FooterContainer, Link, LinkEl, IconWrapper } from './FooterElements'
-import { FaGithub } from 'react-icons/fa'
-import { FaReact } from 'react-icons/fa'
+import { FooterContainer, FooterLink, FooterLogo, FooterText } from './FooterElements'
 
 const Footer = () => {
   const handleClick = () => {
@@ -9,17 +7,13 @@ const Footer = () => {
   }
   return (
     <FooterContainer>
-      <Link onClick={handleClick}>
-        <LinkEl>
-          <IconWrapper>
-            <FaGithub size={30} />
-          </IconWrapper>
-          <IconWrapper>
-            <FaReact size={30} />
-          </IconWrapper>
-        </LinkEl>
-        <LinkEl>Réalisé par Jade Dupont avec React JS</LinkEl>
-      </Link>
+      <FooterLogo>
+        MN
+      </FooterLogo>
+      <FooterLink onClick={handleClick}>
+        Réalisé par Jade Dupont avec React JS
+      </FooterLink>
+      <FooterText>Tous droits réservés 2022©</FooterText>
     </FooterContainer>
   )
 }

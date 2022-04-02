@@ -5,7 +5,15 @@ import { InfoContainer, InfoWrapper } from '../SectionElements'
 import { skills } from './Data'
 import SkillItem from './SkillItem'
 import { SkillsContainer, SkillsWrapper } from './SkillsElements'
-// import strategyIcon from '../../images/icons/strategy.png'
+import img2 from '../../../images/icons/fi-rr-chart-histogram.png'
+import img4 from '../../../images/icons/fi-rr-chart-network.png'
+import img3 from '../../../images/icons/fi-rr-chart-pie-alt.png'
+import img1 from '../../../images/icons/fi-rr-download.png'
+// import img from '../../../images/icons/fi-rr-envelope.png'
+// import img from '../../../images/icons/fi-rr-marker.png'
+import img5 from '../../../images/icons/fi-rr-rocket.png'
+
+const imgArr = [img1, img2, img3, img4, img5]
 
 const Skills = () => {
   const [animation, setAnimation] = useState(false)
@@ -24,7 +32,7 @@ const Skills = () => {
         <Title>Compétences</Title>
         <SkillsWrapper className={animation ? 'goAnimation' : 'hidden'}>
           {skills.map((item, index) => (
-            <SkillItem key={index} item={item} />
+            <SkillItem key={index} item={item} img={imgArr[index]} />
           ))}
         </SkillsWrapper>
       </InfoWrapper>
