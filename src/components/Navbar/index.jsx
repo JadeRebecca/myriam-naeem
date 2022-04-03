@@ -15,7 +15,7 @@ import {
   NavBtn,
 } from './NavbarElement'
 import Btn from '../Button'
-import Pdf from '../../docs/resume.pdf'
+import Pdf from '../../docs/cv_fr.pdf'
 
 const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {

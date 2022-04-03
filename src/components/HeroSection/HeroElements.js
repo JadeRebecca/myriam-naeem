@@ -59,30 +59,32 @@ export const HeroS1 = styled.span`
   display: block;
   margin-top: 24px;
   color: ${({ theme }) => theme.white};
-  font-size: 24px;
+  font-size: 2.5rem;
+  font-weight : 400;
   max-width: 600px;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    font-size: 20px;
-  }
+  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+  //   font-size: 20px;
+  // }
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 18px;
-  }
+  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+  //   font-size: 18px;
+  // }
 `
 
 export const HeroS2 = styled.span`
   display: block;
   color: ${({ theme }) => theme.secondary};
-  font-size: 48px;
+  font-size: 2.5rem;
+  font-weight : 500;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    font-size: 40px;
-  }
+  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+  //   font-size: 40px;
+  // }
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-    font-size: 22px;
-  }
+  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+  //   font-size: 22px;
+  // }
 `
 
 

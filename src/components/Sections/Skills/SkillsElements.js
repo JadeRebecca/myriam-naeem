@@ -17,7 +17,8 @@ export const SkillsContainer = styled.div`
 export const SkillTitle = styled.h3.attrs((props) => ({
   className: props.className,
 }))`
-  font-size: 18px;
+  font-size: 1rem;
+  font-weight : 500;
   color: ${({ theme }) => theme.primary};
   text-align : center;
 
@@ -76,6 +77,8 @@ export const SkillCol = styled.div`
   }
 `
 export const SkillsDescription = styled.div`
+  font-size: 0.875rem;
+  font-weight: 300;
   margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -83,12 +86,11 @@ export const SkillsDescription = styled.div`
   text-align : center;
 `
 
-export const Skill = styled.div`
-  font-size: 16px;
-  padding: 3px 10px;
-  background: ${({ theme }) => theme.neutral};
-  border-radius: 20px;
-`
+// export const Skill = styled.div`
+//   padding: 3px 10px;
+//   background: ${({ theme }) => theme.neutral};
+//   border-radius: 20px;
+// `
 export const ImgContainer = styled.div`
   padding: 4vw;
 `

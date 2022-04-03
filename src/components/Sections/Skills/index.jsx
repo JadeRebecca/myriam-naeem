@@ -5,13 +5,13 @@ import { InfoContainer, InfoWrapper } from '../SectionElements'
 import { skills } from './Data'
 import SkillItem from './SkillItem'
 import { SkillsContainer, SkillsWrapper } from './SkillsElements'
-import img2 from '../../../images/icons/fi-rr-chart-histogram.png'
-import img4 from '../../../images/icons/fi-rr-chart-network.png'
-import img3 from '../../../images/icons/fi-rr-chart-pie-alt.png'
-import img1 from '../../../images/icons/fi-rr-download.png'
+import img2 from '../../../images/icons/fi-rr-chart-histogram.svg'
+import img4 from '../../../images/icons/fi-rr-chart-network.svg'
+import img3 from '../../../images/icons/fi-rr-chart-pie-alt.svg'
+import img1 from '../../../images/icons/fi-rr-download.svg'
 // import img from '../../../images/icons/fi-rr-envelope.png'
 // import img from '../../../images/icons/fi-rr-marker.png'
-import img5 from '../../../images/icons/fi-rr-rocket.png'
+import img5 from '../../../images/icons/fi-rr-rocket.svg'
 
 const imgArr = [img1, img2, img3, img4, img5]
 

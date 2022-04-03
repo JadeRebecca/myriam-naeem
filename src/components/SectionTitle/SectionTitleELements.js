@@ -5,9 +5,9 @@ export const Title = styled.h2.attrs((props) => ({
   }))`
     text-align: center;
     color: ${({ theme }) => theme.primary};
-    font-size: 28px;
+    font-size: 1.875rem;
     line-height: 50px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 26px;
@@ -23,7 +23,7 @@ export const Title = styled.h2.attrs((props) => ({
         position: absolute;
         width: 9%;
         display: block;
-        height: 5px;
+        height: 2px;
         background-color: ${({ theme }) => theme.secondary};
         bottom: -5px;
         margin-left : 45%;

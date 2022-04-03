@@ -1,6 +1,6 @@
 import React from 'react'
 import {ProjetCol, ProjetDescription, Projet, ProjetTitle, ProjetCompetences, ProjetBtnContainer, ProjetCompetencesTitle} from './ProjetsElements'
-import Btn from '../../Button'
+import {BtnLink} from '../../Button/ButtonElements'
 import { Img } from '../SectionElements'
 
 const ProjetItem = ({ item, img }) => {
@@ -20,7 +20,10 @@ const ProjetItem = ({ item, img }) => {
       
       </ProjetCompetences>
       <ProjetBtnContainer>
-        <Btn text="Voir le code"/>
+      <BtnLink href="https://www.google.fr/" target="_blank" className="small">
+      Voir le code
+      </BtnLink>
+      
       </ProjetBtnContainer>
     </ProjetCol>
   )

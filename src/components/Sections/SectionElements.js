@@ -38,9 +38,9 @@ export const TextWrapper = styled.div.attrs((props) => ({
 `
 
 export const Description = styled.p`
-  /*max-width: 440px;*/
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size : 1rem;
+  font-weight: 500;
   line-height: 26px;
   color: ${({ theme }) => theme.primary};
   text-align: justify;

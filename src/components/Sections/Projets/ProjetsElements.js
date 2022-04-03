@@ -16,16 +16,17 @@ export const ProjetsContainer = styled.div`
 export const ProjetTitle = styled.h3.attrs((props) => ({
   className: props.className,
 }))`
-  font-size: 18px;
+  font-size: 1rem;
+  font-weight: 400;
   text-align : center;
- 
+  margin-bottom: 1rem;
 `
 
 const divFadeIn = keyframes`
   0% {
     transform: translateY(100%);
   }
-100%
+  100%
    {
     transform: translateY(0%);
   }
@@ -72,24 +73,27 @@ export const ProjetCol = styled.div`
   }
 `
 export const ProjetDescription = styled.div`
+  font-size: 0.875rem;
+  font-weight: 300;
   margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 `
 
-export const Projet = styled.div`
-  font-size: 16px;
-  padding: 3px 10px;
-  background: ${({ theme }) => theme.neutral};
-  border-radius: 20px;
-`
+// export const Projet = styled.div`
+//   padding: 3px 10px;
+//   background: ${({ theme }) => theme.neutral};
+//   border-radius: 20px;
+// `
 export const ProjetCompetences = styled.div`
+  font-size: 0.78rem;
+  font-weight : 300;
   margin-top : 5px;
   margin-bottom : 14px;
 `
 export const ProjetCompetencesTitle = styled.p`
-  font-size: 16px;
+  font-size: 0.9375rem;
   line-height : 40px;
 `
 export const ProjetBtnContainer = styled.div`
