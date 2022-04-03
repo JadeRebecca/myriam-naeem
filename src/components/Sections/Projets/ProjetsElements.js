@@ -80,13 +80,7 @@ export const ProjetDescription = styled.div`
   flex-wrap: wrap;
   gap: 6px;
 `
-
-// export const Projet = styled.div`
-//   padding: 3px 10px;
-//   background: ${({ theme }) => theme.neutral};
-//   border-radius: 20px;
-// `
-export const ProjetCompetences = styled.div`
+export const ProjetCompetencesContainer = styled.div`
   font-size: 0.78rem;
   font-weight : 300;
   margin-top : 5px;
@@ -95,9 +89,19 @@ export const ProjetCompetences = styled.div`
 export const ProjetCompetencesTitle = styled.p`
   font-size: 0.9375rem;
   line-height : 40px;
+  font-weight : 400;
+`
+export const ProjetCompetence = styled.span`
+  padding-right : 3px;
+  &:not(:nth-child(2)) {
+    padding-left : 3px;
+    border-left : 1px solid ${({ theme }) => theme.secondary};
+  }
 `
 export const ProjetBtnContainer = styled.div`
     display: flex;
     justify-content: space-around;
+
+   
 `
 

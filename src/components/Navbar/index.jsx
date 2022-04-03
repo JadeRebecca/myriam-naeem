@@ -1,21 +1,12 @@
 import React from 'react'
-import { animateScroll as scroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
-import ThemeToggler from '../ThemeToggler'
-import {
-  Nav,
-  NavLogoLink,
-  NavLogo,
-  NavbarContainer,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLink,
-  NavAnchor,
-  NavBtn,
-} from './NavbarElement'
-import Btn from '../Button'
+import { animateScroll as scroll } from 'react-scroll'
 import Pdf from '../../docs/cv_fr.pdf'
+import Btn from '../Button'
+import {
+  MobileIcon, Nav, NavAnchor, NavbarContainer, NavBtn, NavItem,
+  NavLink, NavLogoLink, NavMenu
+} from './NavbarElement'
 
 const Navbar = ({ toggle, theme, themeToggler }) => {
   const toggleHome = () => {
@@ -73,13 +64,14 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
                 Contact
               </NavLink>
             </NavItem>
-          </NavMenu>
-          <NavBtn>
+            <NavBtn>
             <Btn href={Pdf} target="_blank" text="CV" />
           </NavBtn>
-          <NavBtn>
+          </NavMenu>
+         
+          {/* <NavBtn>
             <ThemeToggler theme={theme} toggleTheme={themeToggler} />
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

@@ -9,23 +9,26 @@ export const Title = styled.h2.attrs((props) => ({
     line-height: 50px;
     font-weight: 500;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
     margin-bottom: 26px;
     position: relative;
 
-    &.reverse {
-      color: ${({ theme }) => theme.white};
+    &:after {
+      content: '';
+      position: absolute;
+      width: 9%;
+      display: block;
+      height: 2px;
+      background-color: ${({ theme }) => theme.secondary};
+      bottom: -5px;
+      margin-left : 45%;
+
+      @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+        width: 17%;
+        margin-left : 40%;
+      }
     }
 
-   
-    &:after {
-        content: '';
-        position: absolute;
-        width: 9%;
-        display: block;
-        height: 2px;
-        background-color: ${({ theme }) => theme.secondary};
-        bottom: -5px;
-        margin-left : 45%;
+    &.reverse {
+      color: ${({ theme }) => theme.white};
     }
 `

@@ -3,7 +3,8 @@ import Btn from '../Button'
 import {
   BtnContainer, HeroContainer,
   HeroContent, HeroS1,
-  HeroS2
+  HeroS2,
+  HeroLink
 } from './HeroElements'
 
 
@@ -18,8 +19,22 @@ const HeroSection = () => {
           <HeroS2>Data analyst | Data scientist</HeroS2>
         </p>
         <BtnContainer>
-          <Btn text="Voir mes projets"/>
-          <Btn text="me contacter"/>
+          <HeroLink 
+            to="projets" 
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}>
+            Voir mes projets
+          </HeroLink>
+          <HeroLink 
+            to="contact" 
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}>
+            me contacter
+          </HeroLink>
         </BtnContainer>
       </HeroContent>
      

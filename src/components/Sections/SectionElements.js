@@ -10,14 +10,12 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     padding: 10px 0;
   }
-
-  
 `
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 100px 24px;
@@ -44,6 +42,11 @@ export const Description = styled.p`
   line-height: 26px;
   color: ${({ theme }) => theme.primary};
   text-align: justify;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    margin-left : 5vw;
+    margin-right: 5vw;
+  }
 `
 
 export const Forth = styled.span`

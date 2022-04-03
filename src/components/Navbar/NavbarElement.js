@@ -21,11 +21,12 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding-left : 24px;
+  padding-right : 50px;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
-    padding: 0 6px;
-  }
+  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
+  //   padding: 0 6px;
+  // }
 `
 
 export const NavLogoLink = styled(LinkS)`
@@ -70,6 +71,7 @@ export const NavMenu = styled.ul`
 `
 export const NavItem = styled.li`
   height: 80px;
+  width: 100px;
 `
 export const NavLink = styled(LinkS)`
   display: flex;

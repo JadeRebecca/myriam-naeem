@@ -1,7 +1,7 @@
 import React from 'react'
-import {ProjetCol, ProjetDescription, Projet, ProjetTitle, ProjetCompetences, ProjetBtnContainer, ProjetCompetencesTitle} from './ProjetsElements'
-import {BtnLink} from '../../Button/ButtonElements'
+import { BtnLink } from '../../Button/ButtonElements'
 import { Img } from '../SectionElements'
+import { ProjetBtnContainer, ProjetCol, ProjetCompetence, ProjetCompetencesContainer, ProjetCompetencesTitle, ProjetDescription, ProjetTitle } from './ProjetsElements'
 
 const ProjetItem = ({ item, img }) => {
   return (
@@ -11,16 +11,15 @@ const ProjetItem = ({ item, img }) => {
       <ProjetDescription>
         {item.description}
       </ProjetDescription>
-      <ProjetCompetences>
-      <ProjetCompetencesTitle>Compétences utilisées</ProjetCompetencesTitle>
-
-      {item.competences.map((el, index) => (
-            <span key={index}>{el}</span>
+      <ProjetCompetencesContainer>
+        <ProjetCompetencesTitle>Compétences utilisées</ProjetCompetencesTitle>
+        
+          {item.competences.map((el, index) => (
+            <ProjetCompetence key={index}>{el}</ProjetCompetence>
           ))}
-      
-      </ProjetCompetences>
+      </ProjetCompetencesContainer>
       <ProjetBtnContainer>
-      <BtnLink href="https://www.google.fr/" target="_blank" className="small">
+      <BtnLink href={item.url} target="_blank" className="small">
       Voir le code
       </BtnLink>
       
