@@ -3,7 +3,7 @@ import { FooterContainer, FooterLink, FooterLogo, FooterText } from './FooterEle
 
 const Footer = () => {
   const handleClick = () => {
-    window.open('https://github.com/JadeRebecca/portfolio')
+    window.open('https://jade-dupont-portfolio.web.app/')
   }
   return (
     <FooterContainer>
