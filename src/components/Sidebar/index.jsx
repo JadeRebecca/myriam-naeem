@@ -14,7 +14,6 @@ import {
 
 const Sidebar = ({ toggle, isOpen }) => {
   const lang = useSelector((state) => state.languageReducer.language);
-  const dispatch = useDispatch();
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon>

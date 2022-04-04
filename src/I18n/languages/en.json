@@ -5,5 +5,7 @@
   "menu1": "Home",
   "menu2": "Projects",
   "menu3": "Contact",
-  "menu-download": "Resume"
+  "menu-download": "Resume",
+  "hero-button1": "See my projects",
+  "hero-button2": "Contact me"
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { translation } from '../../I18n/i18n';
-import Btn from '../Button';
-import { BtnContainer, HeroContainer, HeroContent, HeroS1, HeroS2, HeroLink } from './HeroElements';
+import { BtnContainer, HeroContainer, HeroContent, HeroLink, HeroS1, HeroS2 } from './HeroElements';
 
 const HeroSection = () => {
+  const lang = useSelector((state) => state.languageReducer.language);
+
   return (
     <HeroContainer>
       <HeroContent>
@@ -16,11 +17,10 @@ const HeroSection = () => {
         </p>
         <BtnContainer>
           <HeroLink to="projets" spy={true} smooth={true} offset={-80} duration={500}>
-            {translation(lang, 'heroButton')}
-            Voir mes projets
+            {translation(lang, 'hero-button1')}
           </HeroLink>
           <HeroLink to="contact" spy={true} smooth={true} offset={-80} duration={500}>
-            me contacter
+            {translation(lang, 'hero-button2')}
           </HeroLink>
         </BtnContainer>
       </HeroContent>
