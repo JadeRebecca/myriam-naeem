@@ -1,12 +1,8 @@
-import React from 'react'
-import Btn from '../Button'
-import {
-  BtnContainer, HeroContainer,
-  HeroContent, HeroS1,
-  HeroS2,
-  HeroLink
-} from './HeroElements'
-
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { translation } from '../../I18n/i18n';
+import Btn from '../Button';
+import { BtnContainer, HeroContainer, HeroContent, HeroS1, HeroS2, HeroLink } from './HeroElements';
 
 const HeroSection = () => {
   return (
@@ -19,27 +15,17 @@ const HeroSection = () => {
           <HeroS2>Data analyst | Data scientist</HeroS2>
         </p>
         <BtnContainer>
-          <HeroLink 
-            to="projets" 
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}>
+          <HeroLink to="projets" spy={true} smooth={true} offset={-80} duration={500}>
+            {translation(lang, 'heroButton')}
             Voir mes projets
           </HeroLink>
-          <HeroLink 
-            to="contact" 
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}>
+          <HeroLink to="contact" spy={true} smooth={true} offset={-80} duration={500}>
             me contacter
           </HeroLink>
         </BtnContainer>
       </HeroContent>
-     
     </HeroContainer>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
