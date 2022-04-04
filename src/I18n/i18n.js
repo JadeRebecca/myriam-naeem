@@ -8,3 +8,11 @@ export const translation = (language, key) => {
     return FR[key];
   }
 };
+
+export const translationObject = (language, key) => {
+  if (language === 'en') {
+    return EN[key];
+  } else if (language === 'fr') {
+    return FR[key];
+  }
+};
