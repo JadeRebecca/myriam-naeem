@@ -1,13 +1,13 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { translation } from '../../I18n/i18n';
 import ButtonLink from '../Button';
 import {
-  SidebarContainer,
-  Icon,
   CloseIcon,
-  SidebarMenu,
+  Icon,
+  SidebarContainer,
   SidebarLink,
+  SidebarMenu,
   SidebarWrapper,
   SideBtnWrap,
 } from './SidebarElements';
