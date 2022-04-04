@@ -1,0 +1,9 @@
+{
+  "titre": "hello",
+  "footer-line1": "Made by Jade Dupont with React JS",
+  "footer-line2": "All rights reserved 2022©",
+  "menu1": "Home",
+  "menu2": "Projects",
+  "menu3": "Contact",
+  "menu-download": "Resume"
+}
