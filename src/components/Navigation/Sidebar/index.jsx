@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { translation } from '../../../I18n/i18n';
 import ButtonLink from '../../Button';
 import {
@@ -14,6 +15,16 @@ import {
 
 const Sidebar = ({ toggle, isOpen }) => {
   const lang = useSelector((state) => state.languageReducer.language);
+  const dispatch = useDispatch();
+
+  const handleChange = () => {
+    console.log(lang);
+    let newLang = 'en';
+    if (lang === 'en') newLang = 'fr';
+    dispatch({ type: newLang });
+    toggle();
+  };
+
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon>
@@ -32,6 +43,9 @@ const Sidebar = ({ toggle, isOpen }) => {
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
             {translation(lang, 'menu3')}
+          </SidebarLink>
+          <SidebarLink to="accueil" onClick={handleChange}>
+            {translation(lang, 'menu-language')}
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
