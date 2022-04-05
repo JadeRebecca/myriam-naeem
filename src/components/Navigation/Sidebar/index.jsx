@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import PdfFr from '../../../docs/cv_fr.pdf';
+import PdfEn from '../../../docs/cv_en.pdf';
 import { translation } from '../../../I18n/i18n';
 import ButtonLink from '../../Button';
 import {
@@ -11,6 +12,7 @@ import {
   SidebarMenu,
   SidebarWrapper,
   SideBtnWrap,
+  SidebarAnchor,
 } from './SidebarElements';
 
 const Sidebar = ({ toggle, isOpen }) => {
@@ -18,7 +20,6 @@ const Sidebar = ({ toggle, isOpen }) => {
   const dispatch = useDispatch();
 
   const handleChange = () => {
-    console.log(lang);
     let newLang = 'en';
     if (lang === 'en') newLang = 'fr';
     dispatch({ type: newLang });
@@ -38,9 +39,9 @@ const Sidebar = ({ toggle, isOpen }) => {
           <SidebarLink to="projets" onClick={toggle}>
             {translation(lang, 'menu2')}
           </SidebarLink>
-          <SidebarLink to="linkedin" onClick={toggle}>
+          <SidebarAnchor href="https://www.linkedin.com/in/myriam-naeem/" target="_blank">
             LinkedIn
-          </SidebarLink>
+          </SidebarAnchor>
           <SidebarLink to="contact" onClick={toggle}>
             {translation(lang, 'menu3')}
           </SidebarLink>
@@ -49,7 +50,11 @@ const Sidebar = ({ toggle, isOpen }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <ButtonLink text={translation(lang, 'menu-download')} />
+          <ButtonLink
+            href={lang === 'en' ? PdfEn : PdfFr}
+            target="_blank"
+            text={translation(lang, 'menu-download')}
+          />
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

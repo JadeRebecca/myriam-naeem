@@ -62,18 +62,19 @@
       "titre": "Red wine quality",
       "description": "Predict whether the red wine will be of good or bad quality. The data is taken from Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://github.com/mymytoss/classification-red-wine-quality"
     },
     {
       "id": 4,
       "titre": "Dog breed recognition",
       "description": "Indicate the breed of a dog from its picture. The data is taken from Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Deep Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://drive.google.com/drive/folders/1eqHzyAmbE9BPS27Pmnszf11SUn92G1Ec?usp=sharing"
     }
   ],
   "projects-subtitle": "Skills used",
   "projects-button": "See the code",
   "contact-title": "Contact me",
-  "contact-text": "Do not hesitate to contact me, I will be delighted to discuss with you!"
+  "contact-text": "Do not hesitate to contact me, I will be delighted to discuss with you!",
+  "contact-location": "Reunion, France (UTC+2)"
 }

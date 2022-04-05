@@ -3,7 +3,8 @@ import { animateScroll as scroll } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
 import { translation } from '../../../I18n/i18n';
 import { FaBars } from 'react-icons/fa';
-import Pdf from '../../../docs/cv_fr.pdf';
+import PdfFr from '../../../docs/cv_fr.pdf';
+import PdfEn from '../../../docs/cv_en.pdf';
 import Btn from '../../Button';
 import {
   MobileIcon,
@@ -61,7 +62,11 @@ const Navbar = ({ toggle }) => {
               </NavLink>
             </NavItem>
             <NavBtn>
-              <Btn href={Pdf} target="_blank" text={translation(lang, 'menu-download')} />
+              <Btn
+                href={lang === 'en' ? PdfEn : PdfFr}
+                target="_blank"
+                text={translation(lang, 'menu-download')}
+              />
             </NavBtn>
           </NavMenu>
 

@@ -3,9 +3,11 @@ import { useSelector } from 'react-redux';
 import { translation } from '../../../I18n/i18n';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { HiOutlineMail } from 'react-icons/hi';
+import { GrLocation } from 'react-icons/gr';
+
 import Btn from '../../Button';
 import { Title, Description, InfoContainer, InfoWrapper, TextWrapper } from '../SectionElements';
-import { BtnContainer } from './ContactElements';
+import { BtnContainer, Location } from './ContactElements';
 
 const Contact = () => {
   const lang = useSelector((state) => state.languageReducer.language);
@@ -15,6 +17,9 @@ const Contact = () => {
         <Title>{translation(lang, 'contact-title')}</Title>
         <TextWrapper>
           <Description>{translation(lang, 'contact-text')}</Description>
+          <Location>
+            <GrLocation size={20} /> {translation(lang, 'contact-location')}
+          </Location>
           <BtnContainer>
             <Btn
               href="https://www.linkedin.com/in/myriam-naeem/"

@@ -48,32 +48,33 @@
       "titre": "Maladie du coeur",
       "description": "Déterminer si un patient est atteint ou non d’une maladie du coeur. Les données sont récupérées sur Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://github.com/mymytoss/classification-heart-disease"
     },
     {
       "id": 2,
       "titre": "Prix d'un bulldozzer",
       "description": "Estimer le prix des bulldozers selon leurs caractéristiques. Les données sont récupérées sur Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://github.com/mymytoss/regression-bulldozer-price"
     },
     {
       "id": 3,
       "titre": "Qualité du vin rouge",
       "description": "Prédire si le vin rouge sera de bonne ou mauvaise qualité. Les données sont récupérées sur Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://github.com/mymytoss/classification-red-wine-quality"
     },
     {
       "id": 4,
       "titre": "Reconnaissance de la race chien",
       "description": "Indiquer la race d’un chien à partir de sa photo. Les données sont récupérées sur Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Deep Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://drive.google.com/drive/folders/1eqHzyAmbE9BPS27Pmnszf11SUn92G1Ec?usp=sharing"
     }
   ],
   "projects-subtitle": "Compétences utilisées",
   "projects-button": "Voir le code",
   "contact-title": "Me contacter",
-  "contact-text": "N’hésitez pas à me contacter, je serai ravie d’échanger avec vous !"
+  "contact-text": "N’hésitez pas à me contacter, je serai ravie d’échanger avec vous !",
+  "contact-location": "La Réunion, France (UTC+2)"
 }

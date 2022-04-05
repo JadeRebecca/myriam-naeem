@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-import { Link as LinkS } from 'react-scroll'
+import styled, { keyframes } from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 const pFadeIn = keyframes`
   0% {
@@ -9,7 +9,7 @@ const pFadeIn = keyframes`
    {
     transform: translateY(0%);
   }
-`
+`;
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.primary};
@@ -26,7 +26,7 @@ export const HeroContainer = styled.div`
     align-items: start;
     padding-top: 20vh;
   }
-`
+`;
 
 export const HeroContent = styled.h1`
   z-index: 3;
@@ -55,49 +55,50 @@ export const HeroContent = styled.h1`
       transform: translateY(100%);
     }
   }
-`
+`;
 export const HeroS1 = styled.span`
   display: block;
   margin-top: 24px;
   color: ${({ theme }) => theme.white};
   font-size: 2.5rem;
-  font-weight : 400;
+  font-weight: 400;
   max-width: 600px;
+  margin-bottom: 10px;
 
-  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-  //   font-size: 20px;
-  // }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    font-size: 2rem;
+  }
 
-  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-  //   font-size: 18px;
-  // }
-`
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+    font-size: 1.6rem;
+  }
+`;
 
 export const HeroS2 = styled.span`
   display: block;
   color: ${({ theme }) => theme.secondary};
   font-size: 2.5rem;
-  font-weight : 500;
+  font-weight: 500;
 
-  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-  //   font-size: 40px;
-  // }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    font-size: 2rem;
+  }
 
-  // @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
-  //   font-size: 22px;
-  // }
-`
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+    font-size: 1.6rem;
+  }
+`;
 export const BtnContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 60px;
-  gap : 5px;
+  gap: 5px;
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
-    gap : 20px;
-    flex-direction : column;
+    gap: 20px;
+    flex-direction: column;
   }
-`
+`;
 export const HeroLink = styled(LinkS)`
   color: ${({ theme }) => theme.secondary};
   border: 1.4px solid ${({ theme }) => theme.secondary};
@@ -105,20 +106,20 @@ export const HeroLink = styled(LinkS)`
   white-space: nowrap;
   padding: 19px 19px;
   font-size: 1.125rem;
-  font-weight : 500;
+  font-weight: 500;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   line-height: 1;
-  text-align : center;
+  text-align: center;
 
   &:hover {
     transition: all 0.2s ease-in-out;
     border-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.white};
   }
-`
+`;
 
 export const HBtn = styled.a.attrs((props) => ({
   className: props.className,
@@ -129,17 +130,17 @@ export const HBtn = styled.a.attrs((props) => ({
   white-space: nowrap;
   padding: 19px 19px;
   font-size: 1.125rem;
-  font-weight : 500;
+  font-weight: 500;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   line-height: 1;
 
-  &.small{
+  &.small {
     padding: 0px 0px;
     font-size: 1rem;
-    font-weight : 500;
+    font-weight: 500;
   }
 
   &.icon {
@@ -151,4 +152,4 @@ export const HBtn = styled.a.attrs((props) => ({
     border-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.white};
   }
-`
+`;

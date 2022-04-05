@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Link as LinkS } from 'react-scroll'
-import { FaTimes } from 'react-icons/fa'
+import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -15,10 +15,10 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-`
+`;
 export const CloseIcon = styled(FaTimes)`
   color: ${({ theme }) => theme.white};
-`
+`;
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
@@ -27,10 +27,10 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
-`
+`;
 export const SidebarWrapper = styled.div`
   color: ${({ theme }) => theme.white};
-`
+`;
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
@@ -49,11 +49,30 @@ export const SidebarLink = styled(LinkS)`
     color: ${({ theme }) => theme.secondary};
     transition: 0.2s ease-in-out;
   }
-`
+`;
+
+export const SidebarAnchor = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: ${({ theme }) => theme.white};
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.secondary};
+    transition: 0.2s ease-in-out;
+  }
+`;
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -64,4 +83,4 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     grid-template-rows: repeat(6, 60px);
   }
-`
+`;

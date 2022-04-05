@@ -22,6 +22,7 @@ export const InfoWrapper = styled.div`
 
   justify-content: center;
 `;
+
 export const Title = styled.h2.attrs((props) => ({
   className: props.className,
 }))`
@@ -33,6 +34,10 @@ export const Title = styled.h2.attrs((props) => ({
   letter-spacing: 1.4px;
   margin-bottom: 26px;
   position: relative;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    font-size: 1.1rem;
+  }
 
   &:after {
     content: '';
@@ -46,6 +51,7 @@ export const Title = styled.h2.attrs((props) => ({
 
     @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
       width: 17%;
+      font-size: 1.1rem;
       margin-left: 40%;
     }
   }

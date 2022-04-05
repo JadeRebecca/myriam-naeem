@@ -69,6 +69,9 @@ export const SkillCol = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.xl}px) {
     width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     width: 100%;
@@ -85,12 +88,29 @@ export const SkillsDescription = styled.div`
   flex-wrap: wrap;
   gap: 6px;
   text-align: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    width: 70%;
+  }
 `;
 
 export const ImgContainer = styled.div`
   padding: 4vw;
 
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.xl}px) {
+    width: 20vw;
+  }
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     width: 20%;
+  }
+`;
+
+export const Icon = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    margin: 0;
   }
 `;
