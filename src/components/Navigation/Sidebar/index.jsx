@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { translation } from '../../I18n/i18n';
-import ButtonLink from '../Button';
+import { translation } from '../../../I18n/i18n';
+import ButtonLink from '../../Button';
 import {
   CloseIcon,
   Icon,

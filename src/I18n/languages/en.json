@@ -1,5 +1,5 @@
 {
-  "titre": "hello",
+  "titre": "Myriam Naeem ▷ Data Scientist | Data Analyst",
   "footer-line1": "Made by Jade Dupont with React JS",
   "footer-line2": "All rights reserved 2022©",
   "menu1": "Home",
@@ -9,70 +9,70 @@
   "hero-button1": "See my projects",
   "hero-button2": "Contact me",
   "about-title": "About me",
-  "about-line1": "Diplômée d’un master en Webmarketing et passionnée par la data ainsi que la mise en place de recommandations concrètes, j'ai travaillé pour des pures players dont l'importance de la donnée était structurant.",
-  "about-line2": "Par ailleurs, mon expérience en marketing digital et mes compétences techniques me permettent d'être en phase avec les besoins métiers et les contraintes techniques.",
-  "about-line3": " Soif de nouveaux challenges, je suis disponible dès à présent pour relever de nouveaux défis où l’enjeu de la donnée est primordial.",
+  "about-line1": "Graduated from a master degree in Webmarketing, I am passionnate about data and the implementation of concrete recommendations, I have worked for pure players where the importance of data was structuring.",
+  "about-line2": "Moreover, my experience in digital marketing and my technical skills allow me to be in phase with the business needs and technical constraints.",
+  "about-line3": "Eager to learn new things, I am available now to take up new challenges where the issue of data is paramount.",
   "skills-title": "Skills",
   "skills": [
     {
       "id": 1,
-      "category": "Collecter les données",
-      "description": "Définition du besoin métier et des KPIs afin de recueillir les données pertinentes."
+      "category": "Collect data",
+      "description": "Definition of the business need and KPIs in order to collect relevant data."
     },
     {
       "id": 2,
-      "category": "Data analyse",
-      "description": "Analyser et nettoyer les données dans le but de faire des recommandations et optimisations."
+      "category": "Data Analysis",
+      "description": "Analyze and clean data in order to make recommendations and optimizations."
     },
     {
       "id": 3,
-      "category": "Data visualisation",
-      "description": "Création de dashboards pour le suivi des KPIs et l’aide à la prise de décision des différentes équipes."
+      "category": "Data Vizualisation",
+      "description": "Creation of dashboards to monitor KPIs and help the different teams make decisions."
     },
     {
       "id": 4,
-      "category": "Data science",
-      "description": "Réalisation et optimisation de modèles de Machine Learning & Deep Learning."
+      "category": "Data Science",
+      "description": "Realization and optimization of Machine Learning & Deep Learning models."
     },
     {
       "id": 5,
-      "category": "Mise en production et suivi",
-      "description": "Déploiement et partage du travail avec l’équipe. Maintenance et suivi des dashboards."
+      "category": "Deployment and monitoring",
+      "description": "Deployment and work sharing with the team. Monitoring and follow-up of the dashboards."
     }
   ],
   "projects-title": "My projects",
   "projects": [
     {
       "id": 1,
-      "titre": "Maladie du coeur",
-      "description": "Déterminer si un patient est atteint ou non d’une maladie du coeur. Les données sont récupérées sur Kaggle.",
-      "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "titre": "Heart Disease",
+      "description": "Determine whether or not a patient has heart disease. The data is taken from Kaggle.",
+      "competences": ["Python", "EDA", "Data Vizualisation", "Machine Learning"],
+      "url": "https://github.com/mymytoss/classification-heart-disease"
     },
     {
       "id": 2,
-      "titre": "Prix d'un bulldozzer",
-      "description": "Estimer le prix des bulldozers selon leurs caractéristiques. Les données sont récupérées sur Kaggle.",
+      "titre": "Bulldozer price",
+      "description": "Estimate the price of bulldozers according to their characteristics. The data is taken from Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
-      "url": "https://www.google.fr/"
+      "url": "https://github.com/mymytoss/regression-bulldozer-price"
     },
     {
       "id": 3,
-      "titre": "Qualité du vin rouge",
-      "description": "Prédire si le vin rouge sera de bonne ou mauvaise qualité. Les données sont récupérées sur Kaggle.",
+      "titre": "Red wine quality",
+      "description": "Predict whether the red wine will be of good or bad quality. The data is taken from Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Machine Learning"],
       "url": "https://www.google.fr/"
     },
     {
       "id": 4,
-      "titre": "Reconnaissance de la race chien",
-      "description": "Indiquer la race d’un chien à partir de sa photo. Les données sont récupérées sur Kaggle.",
+      "titre": "Dog breed recognition",
+      "description": "Indicate the breed of a dog from its picture. The data is taken from Kaggle.",
       "competences": ["Python", "EDA", "Data Visualisation", "Deep Learning"],
       "url": "https://www.google.fr/"
     }
   ],
-  "projects-subtitle": "Compétences utilisées",
-  "projects-button": "Voir le code",
+  "projects-subtitle": "Skills used",
+  "projects-button": "See the code",
   "contact-title": "Contact me",
-  "contact-text": "N’hésitez pas à me contacter, je serai ravie d’échanger avec vous !"
+  "contact-text": "Do not hesitate to contact me, I will be delighted to discuss with you!"
 }

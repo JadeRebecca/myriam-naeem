@@ -7,16 +7,15 @@ import img4 from '../../../images/icons/fi-rr-chart-network.svg';
 import img3 from '../../../images/icons/fi-rr-chart-pie-alt.svg';
 import img1 from '../../../images/icons/fi-rr-download.svg';
 import img5 from '../../../images/icons/fi-rr-rocket.svg';
-import { Title } from '../../SectionTitle/SectionTitleELements';
-import { InfoWrapper } from '../SectionElements';
+import { InfoWrapper, Title } from '../SectionElements';
 import SkillItem from './SkillItem';
 import { SkillsContainer, SkillsWrapper } from './SkillsElements';
 
 const imgArr = [img1, img2, img3, img4, img5];
-const skills = translation(lang, 'skills');
 
 const Skills = () => {
   const lang = useSelector((state) => state.languageReducer.language);
+  const skills = translation(lang, 'skills');
   const [animation, setAnimation] = useState(false);
   const ref = useRef();
   const inViewport = useIntersection(ref, '0px 0px -500px 0px');

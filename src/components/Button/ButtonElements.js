@@ -1,10 +1,8 @@
-import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
+import styled from 'styled-components';
 
 export const BtnLink = styled.a.attrs((props) => ({
   className: props.className,
 }))`
-
   color: ${({ theme }) => theme.secondary};
   border: 1.4px solid ${({ theme }) => theme.secondary};
   border-radius: ${({ theme }) => theme.borderRadius}px;
@@ -17,10 +15,10 @@ export const BtnLink = styled.a.attrs((props) => ({
   transition: all 0.2s ease-in-out;
   line-height: 1;
 
-  &.small{
+  &.small {
     padding: 10px 19px;
     font-size: 1rem;
-    font-weight : 500;
+    font-weight: 500;
   }
 
   &.icon {
@@ -33,7 +31,7 @@ export const BtnLink = styled.a.attrs((props) => ({
     border-color: ${({ theme }) => theme.secondary};
     color: ${({ theme }) => theme.primary};
   }
-`
+`;
 
 export const Btn = styled.a.attrs((props) => ({
   className: props.className,
@@ -44,17 +42,17 @@ export const Btn = styled.a.attrs((props) => ({
   white-space: nowrap;
   padding: 19px 19px;
   font-size: 1.125rem;
-  font-weight : 500;
+  font-weight: 500;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   line-height: 1;
 
-  &.small{
+  &.small {
     padding: 0px 0px;
     font-size: 1rem;
-    font-weight : 500;
+    font-weight: 500;
   }
 
   &.icon {
@@ -66,4 +64,4 @@ export const Btn = styled.a.attrs((props) => ({
     border-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.white};
   }
-`
+`;

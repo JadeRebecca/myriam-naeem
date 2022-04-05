@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { translation } from '../../../I18n/i18n';
-import { Title } from '../../SectionTitle/SectionTitleELements';
-import { Description, InfoContainer, InfoWrapper, TextWrapper } from '../SectionElements';
+import { Title, Description, InfoContainer, InfoWrapper, TextWrapper } from '../SectionElements';
 
 const About = () => {
   const lang = useSelector((state) => state.languageReducer.language);

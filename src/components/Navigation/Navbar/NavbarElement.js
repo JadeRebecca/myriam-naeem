@@ -1,5 +1,5 @@
-import { Link as LinkS } from 'react-scroll'
-import styled from 'styled-components'
+import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
   height: 80px;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   z-index: 10;
   box-shadow: 0 10px 30px -10px ${({ theme }) => theme.shadow};
 }
-`
+`;
 
 export const NavbarContainer = styled.div`
   background: ${({ theme }) => theme.primary};
@@ -21,28 +21,28 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding-left : 24px;
-  padding-right : 50px;
+  padding-left: 24px;
+  padding-right: 50px;
 
   // @media screen and (max-width: ${({ theme }) => theme.breakpoint.l}px) {
   //   padding: 0 6px;
   // }
-`
+`;
 
 export const NavLogoLink = styled(LinkS)`
   color: ${({ theme }) => theme.white};
   justify-self: flex-start;
   cursor: pointer;
-  font-size : 1.1rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
-`
+`;
 export const NavLogo = styled.img`
   height: 80%;
-`
+`;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -56,7 +56,7 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
-`
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -68,11 +68,11 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     display: none;
   }
-`
+`;
 export const NavItem = styled.li`
   height: 80px;
   width: 100px;
-`
+`;
 export const NavLink = styled(LinkS)`
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@ export const NavLink = styled(LinkS)`
     padding-left: 0.4rem;
     padding-right: 0.4rem;
   }
-`
+`;
 export const NavAnchor = styled.a`
   display: flex;
   align-items: center;
@@ -132,7 +132,7 @@ export const NavAnchor = styled.a`
     padding-left: 0.4rem;
     padding-right: 0.4rem;
   }
-`
+`;
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
@@ -140,4 +140,13 @@ export const NavBtn = styled.nav`
   @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
     display: none;
   }
-`
+`;
+export const NavSelect = styled.select`
+  background: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
+  border: none;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoint.m}px) {
+    display: none;
+  }
+`;

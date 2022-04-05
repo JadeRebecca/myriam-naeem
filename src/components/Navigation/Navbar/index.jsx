@@ -1,10 +1,10 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
-import { translation } from '../../I18n/i18n';
+import { translation } from '../../../I18n/i18n';
 import { FaBars } from 'react-icons/fa';
-import Pdf from '../../docs/cv_fr.pdf';
-import Btn from '../Button';
+import Pdf from '../../../docs/cv_fr.pdf';
+import Btn from '../../Button';
 import {
   MobileIcon,
   Nav,
@@ -15,11 +15,17 @@ import {
   NavLink,
   NavLogoLink,
   NavMenu,
+  NavSelect,
 } from './NavbarElement';
 
-const Navbar = ({ toggle, theme, themeToggler }) => {
+const Navbar = ({ toggle }) => {
   const lang = useSelector((state) => state.languageReducer.language);
   const dispatch = useDispatch();
+
+  const handleChange = (event) => {
+    dispatch({ type: event.target.value });
+  };
+
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -58,11 +64,11 @@ const Navbar = ({ toggle, theme, themeToggler }) => {
               <Btn href={Pdf} target="_blank" text={translation(lang, 'menu-download')} />
             </NavBtn>
           </NavMenu>
-          <button onClick={() => dispatch({ type: 'en' })}>en</button>
-          <button onClick={() => dispatch({ type: 'fr' })}>fr</button>
-          {/* <NavBtn>
-            <ThemeToggler theme={theme} toggleTheme={themeToggler} />
-          </NavBtn> */}
+
+          <NavSelect onChange={handleChange}>
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </NavSelect>
         </NavbarContainer>
       </Nav>
     </>

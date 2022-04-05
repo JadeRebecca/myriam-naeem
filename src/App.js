@@ -1,28 +1,23 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from './hooks/useDarkMode'
-import { GlobalStyles } from './components/Globalstyle'
-import { lightTheme, darkTheme } from './components/Themes'
-import './App.css'
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './components/Globalstyle';
+import { theme } from './components/Themes';
+import './App.css';
 
-import { BrowserRouter as Router } from 'react-router-dom'
-import Home from './pages'
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './pages';
 
 function App() {
-  const [theme, themeToggler, mountedComponent] = useDarkMode()
-  const themeMode = theme === 'light' ? lightTheme : darkTheme
-  if (!mountedComponent) return <div />
-
   return (
-    <ThemeProvider theme={themeMode}>
+    <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
         <Router>
-          <Home theme={theme} themeToggler={themeToggler} />
+          <Home />
         </Router>
       </>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
